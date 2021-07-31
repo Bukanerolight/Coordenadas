@@ -1,6 +1,7 @@
 import { Punto } from "./punto";
+import {Triangulo} from "./triangulo";
 
-let coordenadas1:Punto = new Punto(10,5);
+let coordenadas1: Punto = new Punto(10,5);
 
 console.log("Imprimir Coordenadas");
 console.log(coordenadas1.toString());
@@ -20,3 +21,8 @@ console.log("Cuadrante");
 console.log(coordenadas3.calcularCuadrante());
 console.log("Calcular mas cercanos");
 console.log(coordenadas1.calcularMasCercano(arrayPuntos));
+
+let arrayLados: Triangulo = new Triangulo(coordenadas1, coordenadas2, coordenadas3);
+
+console.log("Calcular lados triangulo");
+console.log(arrayLados.calcularLongitudLados());
