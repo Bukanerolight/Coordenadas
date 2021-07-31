@@ -1,0 +1,17 @@
+"use strict";
+exports.__esModule = true;
+var punto_1 = require("./punto");
+var coordenadas1 = new punto_1.Punto(10, 5);
+console.log("Imprimir Coordenadas");
+console.log(coordenadas1.toString());
+console.log("Distancia al origen (0.0)");
+console.log(coordenadas1.distanciaAlOrigen());
+var coordenadas2 = new punto_1.Punto(25, 15);
+console.log("Distancia al Punto 2");
+console.log(coordenadas1.calcularDistancia(coordenadas2));
+var coordenadas3 = new punto_1.Punto(1, 3);
+var arrayPuntos = [coordenadas2, coordenadas3];
+console.log("Cuadrante");
+console.log(coordenadas3.calcularCuadrante());
+console.log("Calculara mas cercanos");
+console.log(coordenadas1.calcularMasCercano(arrayPuntos));
